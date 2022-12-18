@@ -1,0 +1,171 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    
+}
+
+.main {
+    
+    width: 550px;
+    min-height: 729px;
+    margin: 56px 719px 124px 76px;
+   
+    
+}
+
+.container-top {
+  
+    flex-direction: column;
+    height: 310px;
+    background-color: #6943FF;
+    
+    
+}
+
+h1 {
+    
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    color: #FFFFFF;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.input-el {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 117px;
+    height: 83px;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    
+    background-color: #6943FF;
+    font-weight: 800;
+    font-size: 58px;
+    color: #FFFFFF;
+   
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.btn-el {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 117px;
+    height: 42px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container-bottom {
+    height: 480px;
+    background-color: #F4F4F4;
+    padding-top: 36px
+}
+
+.light {
+    
+    display: block;
+    margin: 0 25px 23.5px 25px;
+    height: 120px;
+    background-color: #FFFFFF;
+}
+
+
+.light-h3 {
+    
+    padding-top: 35px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #5A537B;
+}
+
+.light-p {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #353535;
+}
+
+.switch {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 34px;
+  float: right;
+  
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6943FF;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #F4F4F4;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #6943FF;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-color: #1F2937;
+}
+
